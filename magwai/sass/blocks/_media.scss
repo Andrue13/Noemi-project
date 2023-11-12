@@ -1,0 +1,457 @@
+// @media (max-width: 1530px) {
+//     .header {
+//         &__item {
+//             margin-right: 15px;
+//         }
+//     }
+// }
+
+// @media (max-width: 1364px) {
+//     .button {
+//         &_contact {
+//             width: 220px;
+//         }
+
+//     }
+
+//     .header {
+//         &__item {
+//             margin-right: 10px;
+//         }
+
+//         &__link {
+//             font-size: 12px;
+//         }
+
+//         &__wrapper {
+//             gap: 56px;
+//         }
+//     }
+// }
+
+// @media (max-width: 1200px) {
+//     .button {
+//         &_contact {
+//             width: 200px;
+//         }
+
+//     }
+
+//     .header {
+//         &__item {
+//             margin-right: 8px;
+//         }
+
+//         &__link {
+//             font-size: 11px;
+//         }
+
+//         &__wrapper {
+//             gap: 38px;
+//         }
+//     }
+// }
+
+// @media (max-width:1080px) {
+//     .header {
+//         &__logo {
+//             width: 100px;
+//         }
+
+//         &__wrapper {
+//             gap: 25px;
+//         }
+
+//         &__item {
+//             margin-right: 6px;
+//         }
+
+//         &__link {
+//             font-size: 10px;
+//         }
+
+//         &__phone {
+//             height: 50px;
+//         }
+
+//         &__contacts {
+//             img {
+//                 height: 50px;
+//             }
+//         }
+//     }
+
+//     .button {
+//         &_contact {
+//             width: 170px;
+//             height: 50px;
+//             font-size: 11px;
+//         }
+
+//     }
+// }
+
+// @media (max-width:905px) {
+//     .header {
+//         height: 80px;
+
+//         &__phone {
+//             height: 40px;
+//         }
+
+//         &__contacts {
+//             img {
+//                 height: 40px;
+//             }
+//         }
+//     }
+
+//     .button {
+//         &_contact {
+//             width: 140px;
+//             height: 40px;
+//             font-size: 10px;
+//         }
+
+//     }
+// }
+
+// @media (max-width:860px) {
+//     .button {
+//         &_contact {
+//             width: 100px;
+//             font-size: 9px;
+//         }
+
+//     }
+// }
+
+@media (max-width: 769px) {
+    .container {
+        max-width: 686px;
+    }
+
+    .header {
+        height: 117px;
+
+        &__menu {
+            position: fixed;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            top: 99px;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background-color: #131313;
+            z-index: 1;
+            margin: 0;
+            transition: 0.6s all;
+
+            &_active {
+                right: 0;
+            }
+        }
+
+        &__item {
+            margin-left: 50px;
+            margin-bottom: 15px;
+
+            &:first-child {
+                margin-top: 50px;
+            }
+        }
+
+        &__link {
+            text-align: left;
+            font-family: Montserrat;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+            color: #131313;
+            /* Цвет текста */
+            -webkit-text-stroke: 1px rgba(80, 80, 80);
+            /* Толщина и цвет обводки */
+            text-stroke: rgba(80, 80, 80);
+
+            /* Толщина и цвет обводки (стандартное свойство) */
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &__hamburger {
+            display: block;
+            position: absolute;
+            left: 49px;
+            top: 56px;
+            transform: translateY(-50%);
+            width: 37px;
+            height: 16px;
+
+            span {
+                display: block;
+                height: 4px;
+                width: 100%;
+                background-color: #FFFFFF;
+                margin-bottom: 4px;
+                transition: .5s all;
+            }
+
+            &_active {
+                span {
+                    margin-bottom: -4px;
+
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+
+        }
+
+        &__logo {
+            transform: translateX(130px);
+            width: 156px;
+        }
+
+        &__phone {
+            height: 60px;
+        }
+
+        &__contacts {
+            margin-right: 36px;
+
+            img {
+                height: 60px;
+            }
+        }
+
+        .button {
+            &_contact {
+                width: 200px;
+                font-size: 12px;
+                height: 60px;
+                cursor: none;
+                ::after {
+                    left: 189px;
+                }
+            }
+        }
+    }
+
+    .promo {
+        min-height: 907px;
+
+        &__wrapper {
+            min-height: 907px;
+        }
+
+        &__box {
+            padding-top: 551px;
+            padding-bottom: 76px;
+        }
+
+        &__header {
+            font-size: 38px;
+
+        }
+    }
+    
+    .button {
+        &_promo {
+            margin-left: 10px;
+        }
+    }
+
+    .catalog {
+        padding: 44px 0 156px 0;
+
+        &__title {
+            margin: 0 0 40px 0;
+        }
+
+        &__wrapper {
+            gap: 20px;
+        }
+    }
+
+    .catalog-item {
+        width: 333px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .container {
+        max-width: 328px;
+        padding: 0 16px;
+    }
+
+    .header {
+        height: 72px;
+
+        &__wrapper {
+            width: 100%;
+        }
+
+        &__contacts {
+            display: none;
+        }
+
+        &__item {
+            margin-left: 18px;
+            margin-bottom: 15px;
+
+            &:first-child {
+                margin-top: 0px;
+            }
+        }
+
+        &__menu {
+            top: 72px;
+        }
+
+        &__contacts {
+            &_none {
+                display: block;
+                margin-top: 51px;
+            }
+        }
+
+        .button {
+            &_phone {
+                display: block;
+                margin-top: 6px;
+                width: 92%;
+                height: 60px;
+                margin-left: 21px;
+            }
+            
+           
+        }
+
+        &__img {
+            width: 330px;
+            height: 60px;
+            margin-left: 7px;
+        }
+
+
+
+        &__link {
+            font-size: 20px;
+        }
+
+        &__hamburger {
+            left: 15px;
+            top: 35px;
+            width: 30px;
+            height: 20px;
+
+            span {
+                height: 3px;
+                margin-bottom: 3px;
+            }
+
+            &_active {
+                span {
+                    margin-bottom: -3px;
+
+                    &:nth-child(-3) {
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        &__logo {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            transform: none;
+            width: 112px;
+        }
+    }
+
+
+
+    .promo {
+        min-height: 495px;
+
+        &__wrapper {
+            min-height: 423px;
+        }
+
+        &__box {
+            min-height: 176px;
+            max-width: 328px;
+            padding-left: 14px;
+            padding: 266px 0 52px 0;
+        }
+
+        &__header {
+            font-size: 20px;
+        }
+
+        &__subheader {
+            width: 293px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+
+
+        &__img {
+            height: 47px;
+        }
+    }
+
+    .button {
+        &_promo {
+            width: 220px;
+            height: 47px;
+            ::after {
+                content: url('../icons/Rectangle3mobile.png');
+                top: -17px;
+                left: 211px;
+            } 
+        }
+    }
+
+    .catalog {
+        padding: 48px 0 43px 0;
+
+        &__title {
+            font-size: 20px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        &__loading {
+            img {
+                height: 60px;
+            }
+        }
+    }
+
+    .catalog-item {
+        &__button {
+            width: 280px;
+        }
+    }
+
+    .modal {
+        width: 200px;
+    }
+}
